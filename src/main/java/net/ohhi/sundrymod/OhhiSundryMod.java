@@ -2,10 +2,12 @@ package net.ohhi.sundrymod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
+import net.minecraftforge.eventbus.EventBus;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -14,6 +16,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.ohhi.sundrymod.block.ModBlocks;
+import net.ohhi.sundrymod.item.ModCreativeModTabs;
+import net.ohhi.sundrymod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,10 +32,11 @@ public class OhhiSundryMod
     public OhhiSundryMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModCreativeModTabs.CREATIVE_MODE_TABS.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
-
-
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -43,7 +49,10 @@ public class OhhiSundryMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
+            event.accept(ModItems.MOAI_GOODS);
+            event.accept(ModItems.RAW_MOAI);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

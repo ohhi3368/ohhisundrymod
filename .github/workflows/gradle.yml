@@ -39,7 +39,7 @@ jobs:
     - name: 아티팩트 업로드
       uses: actions/upload-artifact@v3
       with:
-        name: SundryModGradleTestBuild
+        name: ${{ github.event.head.commit.message }}
         path: build/libs/*.jar
 
 

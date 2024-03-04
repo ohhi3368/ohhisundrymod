@@ -2,5 +2,8 @@
   "item.ohhisundrymod.moai_goods": "Moai Goods",
   "item.ohhisundrymod.raw_moai": "Raw Moai",
   "sundry_tab.title": "OHHI Sundry Mod",
-  "block.ohhisundrymod.moai_block": "Block of Moai"
+  "block.ohhisundrymod.moai_block": "Block of Moai",
+  "item.ohhisundrymod.awaken_moai_used": "MOAI",
+  "item.ohhisundrymod.awaken_moai": "Awaken Moai",
+  "sounds.ohhisundrymod.awaken_moai_used": "Awaken Moai has Activated"
 }

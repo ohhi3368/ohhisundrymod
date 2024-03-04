@@ -39,7 +39,7 @@ jobs:
     - name: 아티팩트 업로드
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ github.event.head.commit.message }}
+        name: 1.20.1
         path: build/libs/*.jar
 
 

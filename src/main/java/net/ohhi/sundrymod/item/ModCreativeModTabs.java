@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutPut.accept(ModItems.RAW_MOAI.get());
                         pOutPut.accept(ModBlocks.MOAI_BLOCK.get());
                         pOutPut.accept(ModItems.AWAKEN_MOAI.get());
+                        pOutPut.accept(ModItems.GAME_CRASHER.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

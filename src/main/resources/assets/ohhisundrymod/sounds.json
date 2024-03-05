@@ -2,7 +2,13 @@
   "awaken_moai_used": {
     "subtitles": "sounds.ohhisundrymod.awaken_moai_used",
     "sounds": [
-      "ohhisundrymod:test"
+      "ohhisundrymod:moai9"
+    ]
+  },
+
+  "testsoundpls": {
+    "sounds": [
+      "ohhisundrymod:testsound222"
     ]
   }
 }

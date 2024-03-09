@@ -17,6 +17,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.ohhi.sundrymod.block.ModBlocks;
+import net.ohhi.sundrymod.effect.ModEffects;
 import net.ohhi.sundrymod.item.ModCreativeModTabs;
 import net.ohhi.sundrymod.item.ModItems;
 import net.ohhi.sundrymod.sound.ModSounds;
@@ -38,6 +39,7 @@ public class OhhiSundryMod
         ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         ModSounds.register(modEventBus);
+        ModEffects.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);

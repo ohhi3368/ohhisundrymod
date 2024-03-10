@@ -8,5 +8,6 @@
   "item.ohhisundrymod.game_crasher": "Game Crasher",
   "sounds.ohhisundrymod.awaken_moai_used": "Awaken Moai has Activated",
   "item.ohhisundrymod.sugar_bread": "Bread with Sugar",
-  "effect.ohhisundrymod.diabete": "Diabete"
+  "effect.ohhisundrymod.diabete": "Diabete",
+  "death.attack.diabete": "%s died from Diabete"
 }

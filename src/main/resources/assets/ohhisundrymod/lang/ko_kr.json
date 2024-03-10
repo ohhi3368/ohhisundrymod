@@ -8,5 +8,6 @@
   "item.ohhisundrymod.game_crasher": "게임 크래셔",
   "sounds.ohhisundrymod.awaken_moai_used": "각성한 모아이가 작동됨",
   "item.ohhisundrymod.sugar_bread": "설탕을 뿌린 빵",
-  "effect.ohhisundrymod.diabete": "당뇨"
+  "effect.ohhisundrymod.diabete": "당뇨",
+  "death.attack.diabete": "%s이(가) 당뇨병으로 사망했습니다"
 }

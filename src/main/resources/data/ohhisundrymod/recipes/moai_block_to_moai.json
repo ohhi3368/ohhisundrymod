@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "key": {
+    "type": "minecraft:item",
+    "name": "moai_block"
+  },
+  "ingredients": [
+    {
+      "type": "minecraft:item",
+      "name": "moai_block"
+    }
+  ],
+  "results": [
+    {
+      "type": "minecraft:item",
+      "name": "raw_moai",
+      "count": 9
+    }
+  ]
+}

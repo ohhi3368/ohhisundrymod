@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "key": {
+    "type": "minecraft:item",
+    "name": "sugar_bread"
+  },
+  "ingredients": [
+    {
+      "type": "minecraft:item",
+      "name": "bread"
+    },
+    {
+      "type": "minecraft:item",
+      "name": "sugar"
+    }
+  ],
+  "results": [
+    {
+      "type": "minecraft:item",
+      "name": "sugar_bread"
+    }
+  ]
+}

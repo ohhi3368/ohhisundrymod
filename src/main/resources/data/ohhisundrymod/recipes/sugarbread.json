@@ -1,24 +1,21 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "key": {
-    "type": "minecraft:item",
-    "name": "sugar_bread"
-  },
-  "ingredients": [
-    {
-      "type": "minecraft:item",
-      "name": "bread"
-    },
-    {
-      "type": "minecraft:item",
-      "name": "sugar"
-    }
+  "pattern": [
+    "?!?",
+    "?#?",
+    "???"
   ],
-  "results": [
-    {
-      "type": "minecraft:item",
-      "name": "sugar_bread"
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "!": {
+      "item": "minecraft:sugar"
     }
-  ]
+  },
+  "result": {
+    "item": "ohhisundrymod:sugar_bread",
+    "count": 1
+  }
 }

@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         pOutPut.accept(ModItems.AWAKEN_MOAI.get());
                         pOutPut.accept(ModItems.SUGAR_BREAD.get());
                         pOutPut.accept(ModItems.GAME_CRASHER.get());
+                        pOutPut.accept(ModItems.GOLDEN_GCUBE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

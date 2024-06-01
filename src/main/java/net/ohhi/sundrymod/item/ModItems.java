@@ -30,11 +30,18 @@ public class ModItems {
     public static final RegistryObject<Item> AWAKEN_MOAI = ITEMS.register("awaken_moai",
             () -> new AwakenMoai(new Item.Properties().durability(121)));
 
+    //yes
+
     public static final RegistryObject<Item> SUGAR_BREAD = ITEMS.register("sugar_bread",
             () -> new Item(new Item.Properties().food(ModFoods.SUGAR_BREAD)));
 
     public static final RegistryObject<Item> GAME_CRASHER = ITEMS.register("game_crasher",
             () -> new GameCrasher(new Item.Properties()));
+
+    public static final RegistryObject<Item> GOLDEN_GCUBE = ITEMS.register("golden_gcube",
+            () -> new Item(new Item.Properties()));
+
+    //yes
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

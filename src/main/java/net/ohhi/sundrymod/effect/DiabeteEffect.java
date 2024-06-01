@@ -30,7 +30,10 @@ public class DiabeteEffect extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         DamageSource damagesource = new DamageSource(pLivingEntity.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(CustomDamageSource.DIABETE));
-        pLivingEntity.hurt(damagesource, pAmplifier * 1F);
+        if(pAmplifier == 0)
+            pLivingEntity.hurt(damagesource, 1F);
+        else
+            pLivingEntity.hurt(damagesource, pAmplifier * 1F);
         super.applyEffectTick(pLivingEntity, pAmplifier);
     }
 
